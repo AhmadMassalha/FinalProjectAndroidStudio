@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Home">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/app_IMG_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="#323232"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/app_IMG_logout"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/logout_icon" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/app_IMG_user"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/user_icon"
+        android:elevation="3dp"/>
+    <LinearLayout
+        android:id="@+id/userDetails_IMG"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="700dp"
+        android:elevation="2dp"
+        android:orientation="vertical"
+        android:gravity="start"
+        android:background="@drawable/rounded_transparent_background_flipped"
+        android:visibility="invisible">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/userdata_TEXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="usedatahere"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="@drawable/rounded_black_background_50dp_transparent"
+        android:layout_marginTop="100dp" >
+    </androidx.appcompat.widget.AppCompatImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="750dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:weightSum="6">
+        <LinearLayout
+            android:id="@+id/app_IMG_calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/calendar_icon" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:layout_margin="10dp"
+                android:text="Calendar"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/app_IMG_editWorker"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:background="@drawable/workeredit_icon" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:layout_margin="10dp"
+                android:text="Edit Workers"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/editWorker_frag_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/app_IMG_editWorkTime"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:background="@drawable/changework_time" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:layout_margin="10dp"
+                android:text="Edit Times"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

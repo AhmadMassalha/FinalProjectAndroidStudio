@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Login">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/app_IMG_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="@color/white"
+        />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/app_IMG_background_blurred"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="@color/white"
+        />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="@drawable/rounded_black_background_50dp_transparent"
+        android:layout_marginTop="225dp"
+        />
+
+    <!-- Sign in view -->
+    <LinearLayout
+        android:id="@+id/signIn_VIEW"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:weightSum="6"
+        android:background="@drawable/rounded_black_background"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Login"
+            android:textSize="30dp"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+        <!-- username-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/loginUser_TEXTINPUT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_white_background"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:textSize="20dp"
+                android:inputType="textPersonName"
+                android:imeOptions="actionDone"
+                android:maxLength="40"
+                android:textColor="@color/black"
+                android:hint="Email"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- password-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/loginPassword_TEXTINPUT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_white_background"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:textSize="20dp"
+                android:inputType="textPassword"
+                android:imeOptions="actionDone"
+                android:maxLength="20"
+                android:textColor="@color/black"
+                android:hint="Password" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/login_BTN"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_centerInParent="true"
+            android:background="@drawable/rounded_white_background"/>
+
+        <Button
+            android:id="@+id/goToRegister_BTN"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="No Account? Register"
+            android:layout_centerInParent="true"
+            android:background="@drawable/rounded_white_background"/>
+    </LinearLayout>
+
+    <!-- Registration view -->
+    <LinearLayout
+        android:id="@+id/register_VIEW"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_black_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:weightSum="6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="0"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+        <!-- username-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registerUser_TEXTINPUT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_white_background"
+                android:hint="Email"
+                android:imeOptions="actionDone"
+                android:inputType="textPersonName"
+                android:maxLength="40"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- password-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registerPassword_TEXTINPUT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_white_background"
+                android:hint="Password"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- name-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registerName_TEXTINPUT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_white_background"
+                android:hint="Name"
+                android:imeOptions="actionDone"
+                android:inputType="textPersonName"
+                android:maxLength="20"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        <Button
+            android:id="@+id/register_BTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/rounded_white_background"
+            android:text="Register"
+            android:layout_marginEnd="5dp"/>
+
+        <Button
+            android:id="@+id/backToLogin_BTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/rounded_white_background"
+            android:text="  Back  "
+            android:visibility="visible" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

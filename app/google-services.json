@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "81158492565",
+    "firebase_url": "https://barberandroidfinal-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "barberandroidfinal",
+    "storage_bucket": "barberandroidfinal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:81158492565:android:52d8b0dbc253a1c6d4269c",
+        "android_client_info": {
+          "package_name": "com.example.androidfinalproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_NNgt8p6H_hhXaOXCbCOOZFJwOdK2-20"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
